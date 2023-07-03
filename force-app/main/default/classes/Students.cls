@@ -42,6 +42,5 @@ public with sharing class Students {
         for (Integer grade : grades) {
             System.debug(gradeToLetter(grade));
         }
-
     }
 }
