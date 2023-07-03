@@ -19,4 +19,21 @@ public with sharing class Students {
         System.debug('Ratna: ' + studentMap.get('Ratna'));
         System.debug('Elyas: ' + studentMap.get('Elyas'));
     }
+
+    public static String gradeToLetter (Integer grade) {
+        String letter = '';
+        if (grade > 100 || grade < 0)
+            letter = 'Invalid Grade.';
+        else if (grade <= 100 && grade >= 80)
+            letter = 'A';
+        else if (grade >= 70)
+            letter = 'B';
+        else if (grade >= 60)
+            letter = 'C';
+        else if (grade >= 50)
+            letter = 'D';
+        else
+            letter = 'F';
+        return letter;
+    }
 }
