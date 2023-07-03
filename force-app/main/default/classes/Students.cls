@@ -20,7 +20,7 @@ public with sharing class Students {
         System.debug('Elyas: ' + studentMap.get('Elyas'));
     }
 
-    public static String gradeToLetter (Integer grade) {
+    private static String gradeToLetter (Integer grade) {
         String letter = '';
         if (grade > 100 || grade < 0)
             letter = 'Invalid Grade.';
@@ -35,5 +35,13 @@ public with sharing class Students {
         else
             letter = 'F';
         return letter;
+    }
+
+    public static void printGrades() {
+        List<Integer> grades = new List<Integer> {80, 65, 90, 72};
+        for (Integer grade : grades) {
+            System.debug(gradeToLetter(grade));
+        }
+
     }
 }
