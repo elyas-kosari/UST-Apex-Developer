@@ -1,5 +1,5 @@
 public class ConsciousKitchen {
-  // Instance Variables
+  // ***************************** Instance Variables
   private List<String> tools = new List<String>{
     'Cookware',
     'Cutting Board',
@@ -32,6 +32,8 @@ public class ConsciousKitchen {
     Datetime.newInstance(2023, 7, 15, 9, 0, 0),
     Datetime.newInstance(2023, 7, 16, 9, 0, 0)
   };
+
+  // ***************************** Constructors
 
   public ConsciousKitchen() {
     this.name = 'Conscious Kitchen';
