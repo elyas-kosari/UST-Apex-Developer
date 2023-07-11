@@ -1,10 +1,10 @@
 public class ConsciousKitchen {
-  // ***************************** Instance Variables
+  // ************* Instance Variables *************
   
   private String name;
   private Integer noOfStaff;
   
-  // ***************************** Constructors
+  // ************* Constructors *************
 
   public ConsciousKitchen() {
     this.name = 'Conscious Kitchen';
@@ -16,7 +16,7 @@ public class ConsciousKitchen {
     this.noOfStaff = noOfStaff;
   }
 
-  // ***************************** Methods
+  // ************* Methods *************
   
   private void makeOrders(String foodName) {
     System.debug('***** Start of makeOrders method *****');
