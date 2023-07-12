@@ -1,7 +1,7 @@
 public class ConsciousKitchen {
   // ************* Instance Variables *************
   
-  private String name;
+  private final String name;
   private Integer noOfStaff;
   private List<Menu> menuItems = new List<Menu>();
   
@@ -19,26 +19,26 @@ public class ConsciousKitchen {
 
   // ************* Methods *************
   
-  private void makeOrders(String foodName) {
+  private static void makeOrders(String foodName) {
     System.debug('***** Start of makeOrders method *****');
     System.debug('Start making the Order for ' + foodName);
     System.debug(foodName + ' is ready to be sent back to the customer');
     System.debug('***** End of makeOrders method *****');
   }
 
-  private void prepIngredients() {
+  private static void prepIngredients() {
     System.debug('***** Start of prepFood method *****');
     System.debug('Prepare the ingredients');
     System.debug('***** End of prepFood method *****');
   }
 
-  private void takeOrders(String foodName) {
+  private static void takeOrders(String foodName) {
     System.debug('***** Start of takeOrders method *****');
     System.debug('Take the Order for ' + foodName);
     System.debug('***** End of takeOrders method *****');
   }
 
-  public String serveCustomers(String foodName) {
+  public static String serveCustomers(String foodName) {
 
     // Taking the Order
     takeOrders(foodName);
