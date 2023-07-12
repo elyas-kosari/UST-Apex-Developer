@@ -3,6 +3,7 @@ public class ConsciousKitchen {
   
   private String name;
   private Integer noOfStaff;
+  private List<Menu> menuItems = new List<Menu>();
   
   // ************* Constructors *************
 
@@ -49,5 +50,18 @@ public class ConsciousKitchen {
     makeOrders(foodName);
 
     return 'Here\'s your food: ' + foodName;
+  }
+
+  // ************* Inner Classes *************
+
+  public class Menu {
+    
+    private String foodItem;
+    private Decimal price;
+
+    public Menu() {
+      this.foodItem = 'foodItem';
+      this.price = 12.12;
+    }
   }
 }
