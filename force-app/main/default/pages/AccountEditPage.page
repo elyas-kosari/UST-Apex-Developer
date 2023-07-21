@@ -1,0 +1,12 @@
+<apex:page standardController="Account" lightningStylesheets="true">
+  <apex:pageBlock>
+    <apex:form>
+      <apex:inputField label="Account's New Name" value="{!Account.Name}" />
+      <apex:inputField label="Account's New Name" value="{!Account.Rating}" />
+      <apex:inputField label="Account's New Name" value="{!Account.AnnualRevenue}" />
+      <apex:inputField label="Account's New Name" value="{!Account.Description}" />
+      <apex:commandButton action="{!save}" value="Save" style="background-color: blue;" />
+      <apex:commandButton action="{!cancel}" value="Cancel" />
+    </apex:form>
+  </apex:pageBlock>
+</apex:page>

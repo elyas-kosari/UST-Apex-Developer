@@ -1,0 +1,1 @@
+document.querySelector('h2').addEventListener('click', () => alert('You clicked H2'));
